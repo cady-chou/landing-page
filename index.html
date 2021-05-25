@@ -30,13 +30,14 @@
     }
     
     .img-box {
-        padding: 40px;
+        padding: 40px 40px 10px 40px;
         background-color: #FFFCF4;
         width: 300px;
         margin: 20px auto 50px auto;
         text-align: center;
         border-radius: 30px 0 30px 0;
         box-shadow: 3px 3px 26px rgb(0 0 0 / 10%);
+        z-index: 99;
     }
     
     @media (max-width:376px) {
@@ -68,29 +69,59 @@
             width: 180px;
         }
     }
+    
+    .chou-bear {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-10deg);
+        animation-duration: 2.3s;
+        animation-name: bear-move;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes bear-move {
+        0% {
+            top: 20px;
+            transform: translateX(-50%) rotate(-7deg);
+        }
+        50% {
+            top: 40px;
+            transform: translateX(-50%) rotate(7deg);
+        }
+        100% {
+            top: 20px;
+            transform: translateX(-50%) rotate(-7deg);
+        }
+    }
 </style>
 
 <body>
     <div class="bg">
-        <div class="img-box" style="">
-            <img class="cat-img" src="https://ppt.cc/fWzJtx@.gif" height="100% " alt="一張圖片 ">
+        <div class="img-box" style="position: relative;">
+            <div style="height: 100px;">
+                <img class="chou-bear" src="https://ppt.cc/ffs3Vx@.png" width="80px"></div>
+            <!-- <img class="cat-img" src="https://ppt.cc/fWzJtx@.gif" height="100% " alt="一張圖片 "> -->
             <div style="border-bottom:2px solid #F5E0BF;padding-bottom:30px;">
                 <p style="color: #E2A056;font-size: 30px;font-weight: 800;font-family: 'Lilita One', cursive;margin: 20px 0 0 0;letter-spacing: 3px;">RUI-DIE</p>
-                <p style="color: #457D8E;font-size: 16px;font-weight: 600;">貓派在哪裡！貓派站出來！！！<br>ฅ＾•ω•＾ฅ 喵喵喵～</p>
             </div>
             <div class="cat-content ">
                 <p style="padding-top:18px;font-size: 16px;font-weight: 600;font-family:'Recursive', 'Noto Sans TC', sans-serif;">
-                    <a href="https://store.line.me/themeshop/author/1088855" target="_blank ">《 周氏喵喵LINE主題列表 》</a></p>
-                <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=06e33d86-e413-4aa4-8d32-673d342781c7 " target="_blank ">① 溫暖米白 ›</a></p>
+                    <p style="color: #457D8E;font-size: 16px;font-weight: 600;text-align: left;padding-left: 40px;"><i class="fas fa-bullhorn"></i> 貓派在哪裡！貓派站出來！<br>ฅ＾•ω•＾ฅ 喵喵喵～</p>
+                    <a style="font-weight: 600;" href="https://store.line.me/themeshop/author/1088855" target="_blank "><i class="fas fa-hand-point-right"></i>《 周氏喵喵LINE主題列表 》</a></p>
+                <p style="color: #457D8E;font-size: 16px;font-weight: 600;text-align: left;padding-left: 40px;"><i class="fas fa-bullhorn"></i> 熊熊派在哪裡！熊熊派站出來！<br>(๑･㉨･๑) 請服用！<br></p>
+                <a style="font-weight: 600;" href="https://line.me/S/shop/theme/detail?id=9826f9b5-2826-47d1-9998-ba933955bb93" target="_blank "><i class="fas fa-hand-point-right"></i>《 周氏熊熊－快樂露營篇 》</a></p>
+                <!-- <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=06e33d86-e413-4aa4-8d32-673d342781c7 " target="_blank ">① 溫暖米白 ›</a></p>
                 <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=ccf6d120-e693-4bbf-8ee9-e87ad4f3c794 " target="_blank ">② 暗黑微酷 ›</a></p>
                 <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=2c261df5-a739-42af-9e70-cade5e0ba85e " target="_blank ">③ 初戀粉系 ›</a></p>
                 <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=224a2caa-c16d-4e76-b2d7-b8a42489681f " target="_blank ">④ 小清新風 ›</a></p>
-                <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=ae1068b5-f0a8-4bed-9395-54480771e826 " target="_blank ">⑤ 極簡主義 ›</a></p>
+                <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=ae1068b5-f0a8-4bed-9395-54480771e826 " target="_blank ">⑤ 極簡主義 ›</a></p> -->
             </div>
             <br>
             <div class="shopee " style="border-top:2px dashed #cf973e; ">
                 <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://shopee.tw/ruidie?smtt=0.0.9 " target="_blank "><i class="fas fa-shopping-bag"></i> 蝦皮賣場<br><span style="font-size: 12px; ">* 非常偶爾ㄉ賣一些我的二手衣：）</span></a></p>
             </div>
+            <p style="font-size:12px;color:#666;padding-top: 30px;">© 2021 Cady._.design</p>
         </div>
     </div>
 </body>
