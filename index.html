@@ -85,7 +85,51 @@
             transform: translateX(-50%) scaleX(1);
         }
         50% {
-            transform: translateX(-50%) scale3d(1.1, 1.1, 1.1);
+            transform: translateX(-50%) scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+            transform: translateX(-50%) scaleX(1);
+        }
+    }
+    
+    .cat {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%) rotate(-10deg);
+        animation-duration: 2.3s;
+        animation-name: cat-move;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes cat-move {
+        0% {
+            transform: translateX(-50%) scaleX(1);
+        }
+        50% {
+            transform: translateX(-50%) scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+            transform: translateX(-50%) scaleX(1);
+        }
+    }
+    
+    .bear {
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translateX(-50%) rotate(-10deg);
+        animation-duration: 2.3s;
+        animation-name: bear-move;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes bear-move {
+        0% {
+            transform: translateX(-50%) scaleX(1);
+        }
+        50% {
+            transform: translateX(-50%) scale3d(1.05, 1.05, 1.05);
         }
         100% {
             transform: translateX(-50%) scaleX(1);
@@ -98,19 +142,18 @@
         <div class="img-box" style="position: relative;">
             <div>
                 <!-- <img class="chou-bear" src="https://ppt.cc/fKvuPx@.png" width="80px"></div> -->
-                <img class="cat-img" src="https://ppt.cc/fKvuPx@.png" alt="一張圖片 ">
+                <img class="cat-img" src="https://ppt.cc/fPhYRx@.png" alt="一張圖片 ">
                 <div style="border-bottom:2px solid #FFFEFA;">
                     <p style="color: #E2A056;font-size: 30px;font-weight: 800;font-family: 'Lilita One', cursive;margin: 20px 0 0 0;letter-spacing: 3px;">RUI-DIE</p>
                 </div>
-                <div class="cat-content ">
+                <div class="cat-content" style="height: 250px;">
                     <p style="padding-top:18px;font-size: 16px;font-weight: 600;font-family:'Recursive', 'Noto Sans TC', sans-serif;">
-                        <a style="font-weight: 600;" href="https://store.line.me/themeshop/author/1088855" target="_blank "><img src="https://ppt.cc/fGgxix@.png" alt="" width="250px"></a>
+                        <a class="cat" style="font-weight: 600;" href="https://store.line.me/themeshop/author/1088855" target="_blank "><img src="https://ppt.cc/fGgxix@.png" alt="" width="250px"></a>
                         <!-- <p style="color: #457D8E;font-size: 16px;font-weight: 600;text-align: left;padding-left: 40px;"><i class="fas fa-bullhorn"></i> 貓派在哪裡！貓派站出來！<br>ฅ＾•ω•＾ฅ 喵喵喵～</p> -->
                         <!-- <a style="font-weight: 600;" href="https://store.line.me/themeshop/author/1088855" target="_blank "><i class="fas fa-hand-point-right"></i>《 周氏喵喵LINE主題列表 》</a></p> -->
                         <div style="margin:26px 0;">
-                            <a style="font-weight: 600; " href="https://line.me/S/shop/theme/detail?id=9826f9b5-2826-47d1-9998-ba933955bb93 " target="_blank "><img src="https://ppt.cc/fzkcAx@.png " alt=" " width="233px "></a>
+                            <a class="bear" style="font-weight: 600; " href="https://line.me/S/shop/theme/detail?id=9826f9b5-2826-47d1-9998-ba933955bb93 " target="_blank "><img src="https://ppt.cc/fzkcAx@.png " alt=" " width="233px "></a>
                         </div>
-
                         <!-- <a style="font-weight: 600; " href="https://line.me/S/shop/theme/detail?id=9826f9b5-2826-47d1-9998-ba933955bb93 " target="_blank "><i class="fas fa-hand-point-right "></i>《 周氏熊熊－快樂露營篇 》</a></p> -->
                         <!-- <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=06e33d86-e413-4aa4-8d32-673d342781c7 " target="_blank ">① 溫暖米白 ›</a></p>
                 <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=ccf6d120-e693-4bbf-8ee9-e87ad4f3c794 " target="_blank ">② 暗黑微酷 ›</a></p>
