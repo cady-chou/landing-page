@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap');
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #486B95;
+    ;
+    /* background-image: url('./img/0604bg.png'); */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow: scroll;
+}
+
+.img-box {
+    padding: 40px 40px 10px 40px;
+    background-color: #fffcf4d0;
+    width: 350px;
+    margin: 20px auto 50px auto;
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+    box-shadow: 3px 3px 26px rgb(0 0 0 / 10%);
+    z-index: 99;
+}
+
+@media (max-width:376px) {
+    .img-box {
+        width: 245px;
+    }
+}
+
+.shopee a {
+    color: #0F044D;
+    text-decoration: none;
+}
+
+.chou-bear {
+    width: 110px;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-10deg);
+    animation-duration: 2.3s;
+    animation-name: bear-move;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bear-move {
+    0% {
+        transform: translateX(-50%) scaleX(1);
+    }
+    50% {
+        transform: translateX(-50%) scale3d(1.15, 1.15, 1.15);
+    }
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.theme-link {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.theme {
+    background-size: contain;
+    background-position: center;
+    word-break: keep-all;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288);
+    position: relative;
+    width: 180px;
+    -webkit-user-drag: none;
+    height: 230px;
+    user-select: none;
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 1rem 0 0;
+}
+
+.theme-1 {
+    background-size: cover;
+    background-image: url(img/熊熊-4.png);
+}
+
+.theme-2 {
+    background-image: url(img/咖貓-4.png);
+}
+
+.theme-3 {
+    background-image: url(img/黑貓-4.png);
+}
+
+.theme-4 {
+    background-image: url(img/白貓-4.png);
+}
+
+.theme-5 {
+    background-image: url(img/綠貓-4.png);
+}
+
+.theme-6 {
+    background-image: url(img/粉貓-4.png);
+}

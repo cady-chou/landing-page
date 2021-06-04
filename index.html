@@ -7,167 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUI-DIE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
 </head>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap');
-    .bg {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #FDECB9;
-        margin: 0;
-        padding: 0;
-        background-image: url('https://ppt.cc/fn7KSx@.png');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        overflow: scroll;
-    }
-    
-    .img-box {
-        padding: 40px 40px 10px 40px;
-        background-color: #FFFCF4;
-        width: 300px;
-        margin: 20px auto 50px auto;
-        text-align: center;
-        border-radius: 30px 0 30px 0;
-        box-shadow: 3px 3px 26px rgb(0 0 0 / 10%);
-        z-index: 99;
-    }
-    
-    @media (max-width:376px) {
-        .img-box {
-            width: 245px;
-        }
-    }
-    
-    .cat-content {
-        color: #E2A056;
-    }
-    
-    .cat-content a {
-        color: #E2A056;
-        text-decoration: none;
-    }
-    
-    .shopee a {
-        color: #D87939;
-        text-decoration: none;
-    }
-    
-    .cat-img {
-        width: 100px;
-    }
-    /*     
-    @media (max-width:440px) {
-        .cat-img {
-            width: 60px;
-        }
-    } */
-    
-    .chou-bear {
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%) rotate(-10deg);
-        animation-duration: 2.3s;
-        animation-name: bear-move;
-        animation-iteration-count: infinite;
-    }
-    
-    @keyframes bear-move {
-        0% {
-            transform: translateX(-50%) scaleX(1);
-        }
-        50% {
-            transform: translateX(-50%) scale3d(1.05, 1.05, 1.05);
-        }
-        100% {
-            transform: translateX(-50%) scaleX(1);
-        }
-    }
-    
-    .cat {
-        position: absolute;
-        top: 36%;
-        left: 50%;
-        transform: translateX(-50%) rotate(-10deg);
-        animation-duration: 2.3s;
-        animation-name: cat-move;
-        animation-iteration-count: infinite;
-    }
-    
-    @keyframes cat-move {
-        0% {
-            transform: translateX(-50%) scaleX(1);
-        }
-        50% {
-            transform: translateX(-50%) scale3d(1.05, 1.05, 1.05);
-        }
-        100% {
-            transform: translateX(-50%) scaleX(1);
-        }
-    }
-    
-    .bear {
-        position: absolute;
-        top: 56%;
-        left: 50%;
-        transform: translateX(-50%) rotate(-10deg);
-        animation-duration: 2.3s;
-        animation-name: bear-move;
-        animation-iteration-count: infinite;
-    }
-    
-    @keyframes bear-move {
-        0% {
-            transform: translateX(-50%) scaleX(1);
-        }
-        50% {
-            transform: translateX(-50%) scale3d(1.05, 1.05, 1.05);
-        }
-        100% {
-            transform: translateX(-50%) scaleX(1);
-        }
-    }
-</style>
 
 <body>
     <div class="bg">
         <div class="img-box" style="position: relative;">
+            <div style="height: 110px;">
+                <img class="chou-bear" src="img/貓貓大頭@2x.png" alt="一張圖片 "></div>
             <div>
-                <!-- <img class="chou-bear" src="https://ppt.cc/fKvuPx@.png" width="80px"></div> -->
-                <img class="cat-img" src="https://ppt.cc/fPhYRx@.png" alt="一張圖片 ">
-                <div style="border-bottom:2px solid #FFFEFA;">
-                    <p style="color: #E2A056;font-size: 30px;font-weight: 800;font-family: 'Lilita One', cursive;margin: 20px 0 0 0;letter-spacing: 3px;">RUI-DIE</p>
-                </div>
-                <div class="cat-content" style="height: 250px;">
-                    <p style="padding-top:18px;font-size: 16px;font-weight: 600;font-family:'Recursive', 'Noto Sans TC', sans-serif;">
-                        <a class="cat" style="font-weight: 600;" href="https://store.line.me/themeshop/author/1088855" target="_blank "><img src="https://ppt.cc/fGgxix@.png" alt="" width="250px"></a>
-                        <!-- <p style="color: #457D8E;font-size: 16px;font-weight: 600;text-align: left;padding-left: 40px;"><i class="fas fa-bullhorn"></i> 貓派在哪裡！貓派站出來！<br>ฅ＾•ω•＾ฅ 喵喵喵～</p> -->
-                        <!-- <a style="font-weight: 600;" href="https://store.line.me/themeshop/author/1088855" target="_blank "><i class="fas fa-hand-point-right"></i>《 周氏喵喵LINE主題列表 》</a></p> -->
-                        <div style="margin:26px 0;">
-                            <a class="bear" style="font-weight: 600; " href="https://line.me/S/shop/theme/detail?id=9826f9b5-2826-47d1-9998-ba933955bb93 " target="_blank "><img src="https://ppt.cc/fzkcAx@.png " alt=" " width="233px "></a>
-                        </div>
-                        <!-- <a style="font-weight: 600; " href="https://line.me/S/shop/theme/detail?id=9826f9b5-2826-47d1-9998-ba933955bb93 " target="_blank "><i class="fas fa-hand-point-right "></i>《 周氏熊熊－快樂露營篇 》</a></p> -->
-                        <!-- <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=06e33d86-e413-4aa4-8d32-673d342781c7 " target="_blank ">① 溫暖米白 ›</a></p>
-                <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=ccf6d120-e693-4bbf-8ee9-e87ad4f3c794 " target="_blank ">② 暗黑微酷 ›</a></p>
-                <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=2c261df5-a739-42af-9e70-cade5e0ba85e " target="_blank ">③ 初戀粉系 ›</a></p>
-                <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=224a2caa-c16d-4e76-b2d7-b8a42489681f " target="_blank ">④ 小清新風 ›</a></p>
-                <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://line.me/S/shop/theme/detail?id=ae1068b5-f0a8-4bed-9395-54480771e826 " target="_blank ">⑤ 極簡主義 ›</a></p> -->
-                </div>
-                <br>
-                <div class="shopee " style="border-top:2px dashed #cf973e; ">
-                    <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://shopee.tw/ruidie?smtt=0.0.9 " target="_blank "><i class="fas fa-shopping-bag "></i> 蝦皮賣場<br><span style="font-size: 12px; ">* 非常偶爾ㄉ賣一些我的二手衣：）</span></a></p>
-                </div>
-                <p style="font-size:12px;color:#666;padding-top: 30px; ">© 2021 Cady._.design</p>
+                <p style="color: #12055e;font-size: 30px;font-weight: 800;font-family: 'Lilita One', cursive;margin: 20px 0 0 0;letter-spacing: 3px;">RUI-DIE</p>
             </div>
+            <div style="height: 300px;margin: 10px 0 20px 0;">
+                <div style="white-space: nowrap; overflow-x:scroll;">
+                    <ul style="padding-inline-start: 10px;">
+                        <li style="display: inline-block;">
+                            <div class="theme theme-1">
+                                <a class="theme-link" href="https://line.me/S/shop/theme/detail?id=9826f9b5-2826-47d1-9998-ba933955bb93&lang=zh-Hant&ref=lsh_themeDetail">
+                                    <p>🐻 周氏熊熊露營篇 <i class="fas fa-angle-double-right"></i></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li style="display: inline-block;">
+                            <div class="theme theme-2">
+                                <a class="theme-link" href="https://line.me/S/shop/theme/detail?id=06e33d86-e413-4aa4-8d32-673d342781c7&lang=zh-Hant&ref=lsh_themeDetail">
+                                    <p>🤎 周氏貓貓｜咖 <i class="fas fa-angle-double-right"></i></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li style="display: inline-block;">
+                            <div class="theme theme-3">
+                                <a class="theme-link" href="https://line.me/S/shop/theme/detail?id=ccf6d120-e693-4bbf-8ee9-e87ad4f3c794&lang=zh-Hant&ref=lsh_themeDetail">
+                                    <p>🖤 周氏貓貓｜黑 <i class="fas fa-angle-double-right"></i></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li style="display: inline-block;">
+                            <div class="theme theme-4">
+                                <a class="theme-link" href="https://line.me/S/shop/theme/detail?id=ae1068b5-f0a8-4bed-9395-54480771e826&lang=zh-Hant&ref=lsh_themeDetail">
+                                    <p>🤍 周氏貓貓｜白 <i class="fas fa-angle-double-right"></i></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li style="display: inline-block;">
+                            <div class="theme theme-5">
+                                <a class="theme-link" href="https://line.me/S/shop/theme/detail?id=224a2caa-c16d-4e76-b2d7-b8a42489681f&lang=zh-Hant&ref=lsh_themeDetail">
+                                    <p>💚 周氏貓貓｜綠 <i class="fas fa-angle-double-right"></i></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li style="display: inline-block;">
+                            <div class="theme theme-6">
+                                <a class="theme-link" href="https://line.me/S/shop/theme/detail?id=2c261df5-a739-42af-9e70-cade5e0ba85e&lang=zh-Hant&ref=lsh_themeDetail">
+                                    <p>💗 周氏貓貓｜粉 <i class="fas fa-angle-double-right"></i></p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <p style="font-size:13px;font-weight: 400;color:#666;">往右滑看更多 😝 ➡️</p>
+                <br>
+            </div>
+            <div class="shopee " style="border-top:2px dashed #5A3219 ">
+                <p style="font-size: 16px;font-weight: 600;font-family: 'Noto Sans TC', sans-serif; "><a href="https://shopee.tw/ruidie?smtt=0.0.9 " target="_blank "><i class="fas fa-shopping-bag "></i> 蝦皮賣場<br><span style="font-size: 12px; ">* 非常偶爾ㄉ賣一些我的二手衣：）</span></a></p>
+            </div>
+            <p style="font-size:12px;color:#666;padding-top: 30px; ">© 2021 Cady._.design</p>
         </div>
+    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js " integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
 
 </html>
