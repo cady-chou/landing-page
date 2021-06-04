@@ -29,6 +29,12 @@
     z-index: 99;
 }
 
+@media (max-width:425px) {
+    .img-box {
+        width: 280px;
+    }
+}
+
 @media (max-width:376px) {
     .img-box {
         width: 245px;
