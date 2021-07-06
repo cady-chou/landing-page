@@ -9,7 +9,7 @@
     left: 0;
     margin: 0;
     padding: 0;
-    background-color: #486B95;
+    background-color: #f1f3f6;
     ;
     /* background-image: url('./img/0604bg.png'); */
     background-repeat: no-repeat;
@@ -20,13 +20,17 @@
 
 .img-box {
     padding: 40px 40px 10px 40px;
-    background-color: #fffcf4d0;
     width: 350px;
-    margin: 20px auto 50px auto;
+    margin: 30px auto 50px auto;
     text-align: center;
     border-radius: 30px 0 30px 0;
-    box-shadow: 3px 3px 26px rgb(0 0 0 / 25%);
+    box-shadow: 3px 3px 26px rgba(13, 39, 80, 0.16);
     z-index: 99;
+    background: #f1f3f6;
+}
+
+.img-box:nth-child(1) {
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(13, 39, 80, 0.16);
 }
 
 @media (max-width:425px) {
@@ -74,10 +78,6 @@
 }
 
 .theme-link {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
     text-decoration: none;
     color: #333;
     font-weight: 600;
@@ -89,15 +89,32 @@
     word-break: keep-all;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288);
     position: relative;
-    width: 180px;
+    width: 125px;
     -webkit-user-drag: none;
-    height: 230px;
+    height: 174px;
     user-select: none;
     border-radius: 10px;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
     margin: 0 1rem 0 0;
+    box-shadow: 2px 2px 10px rgba(13, 39, 80, 0.12);
+}
+
+.theme:nth-child(1) {
+    box-shadow: -6px -6px 10px rgb(255, 255, 255), 4px 4px 10px rgba(13, 39, 80, 0.16);
+}
+
+li p {
+    font-size: 13px;
+    color: rgb(136, 136, 136);
+    margin-right: 18px;
+    font-weight: 400;
+}
+
+.theme-0 {
+    background-size: cover;
+    background-image: url(img/兔兔bg.png);
 }
 
 .theme-1 {
@@ -123,4 +140,27 @@
 
 .theme-6 {
     background-image: url(img/粉貓-4.png);
+}
+
+.more-move {
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 3px;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        margin-left: 0px;
+        color: rgb(183, 183, 183);
+    }
+    50% {
+        margin-left: 10px;
+        color: rgb(170, 170, 170);
+    }
+    100% {
+        margin-left: 0px;
+        color: rgb(183, 183, 183);
+    }
 }
